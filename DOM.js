@@ -34,11 +34,35 @@
 // // console.log(header.getAttribute("id "))
 
 // header.setAttribute("title","my header title" )
+	// let links=document.querySelectorAll("a")
+
+	// links.forEach(link => {
+	// 	href= link.getAttribute("href")
+	// 	// console.log(href)
+	// 	link.setAttribute("href", href.replace("http://","https://"))
+	// 	link.setAttribute("data-protocol","SSL")
+	// })
+
+// let links=document.querySelectorAll("a")
+
+// 	links.forEach(link => {
+// 		link.setAttribute("data-protocol","SSL")
+// 		let href=link.href
+// 		link.href=href.replace("http://","https://")
+// 		console.log(link.dataset.protocol)
+// 		link.dataset.protocol2="SSL"
+// 	})
+
 let links=document.querySelectorAll("a")
 
-links.forEach(link => {
-	href= link.getAttribute("href")
-	// console.log(href)
-	link.setAttribute("href", href.replace("http://","https://"))
-	link.setAttribute("data-protocol","SSL")
-})
+	links.forEach(link => {
+		// deffirent 1.setAttribute and 2.dataset
+		// dataset is better weil work style heer and in html together
+
+		// 1.
+		// link.setAttribute("style", "color:red; font-size:20px")
+
+		// 2.
+		link.style.color = 'red'
+		link.style.fontSize = '15px'
+	})
