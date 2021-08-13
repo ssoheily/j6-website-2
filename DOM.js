@@ -83,22 +83,21 @@
 // I don t know , have a class or have not. check and denn use
 // header.classList.toggle("btn-danger")
 
-let lists = document.querySelectorAll("li")
+let ul = document.querySelector("ul")
 
-lists.forEach(list => {
-	if(list.textContent.includes("success")){
-		list.classList.add("text-success")
-	}
-	
-	 if(list.textContent.includes("danger"))
-	 {
-		list.classList.add("text-danger")
+// console.log(ul.children);
+// Array.from(ul.children).forEach( (li , index) => {
+// 	if(index % 2  == 0){
+// 	li.style.color="red";		
+// 	}
+// 	else{
+// 		li.style.color="green"
+// 	}
+// })
 
-	 }
-})
-
-
-
+ul.parentElement.style.fontSize = '20px'
+ul.previousElementSibling.style.color="silver"
+ul.nextElementSibling.style.color = 'blue'
 
 
 
