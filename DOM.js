@@ -53,16 +53,56 @@
 // 		link.dataset.protocol2="SSL"
 // 	})
 
-let links=document.querySelectorAll("a")
+// let links=document.querySelectorAll("a")
 
-	links.forEach(link => {
-		// deffirent 1.setAttribute and 2.dataset
-		// dataset is better weil work style heer and in html together
+// 	links.forEach(link => {
+// 		// deffirent 1.setAttribute and 2.dataset
+// 		// dataset is better weil work style heer and in html together
 
-		// 1.
-		// link.setAttribute("style", "color:red; font-size:20px")
+// 		// 1.
+// 		// link.setAttribute("style", "color:red; font-size:20px")
 
-		// 2.
-		link.style.color = 'red'
-		link.style.fontSize = '15px'
-	})
+// 		// 2.
+// 		link.style.color = 'red'
+// 		link.style.fontSize = '15px'
+// 	})
+
+
+// work mit class 
+// let header = document.querySelector("#header")
+// console.log(header.classList)
+
+// add class 
+// header.classList.add("mb-5")
+
+// remove class
+// header.classList.remove("btn-success")
+
+// header.classList.add("btn-danger")
+
+// I don t know , have a class or have not. check and denn use
+// header.classList.toggle("btn-danger")
+
+let lists = document.querySelectorAll("li")
+
+lists.forEach(list => {
+	if(list.textContent.includes("success")){
+		list.classList.add("text-success")
+	}
+	
+	 if(list.textContent.includes("danger"))
+	 {
+		list.classList.add("text-danger")
+
+	 }
+})
+
+
+
+
+
+
+
+
+
+
