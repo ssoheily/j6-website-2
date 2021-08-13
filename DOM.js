@@ -83,7 +83,7 @@
 // I don t know , have a class or have not. check and denn use
 // header.classList.toggle("btn-danger")
 
-let ul = document.querySelector("ul")
+// let ul = document.querySelector("ul")
 
 // console.log(ul.children);
 // Array.from(ul.children).forEach( (li , index) => {
@@ -95,12 +95,19 @@ let ul = document.querySelector("ul")
 // 	}
 // })
 
-ul.parentElement.style.fontSize = '20px'
-ul.previousElementSibling.style.color="silver"
-ul.nextElementSibling.style.color = 'blue'
+// ul.parentElement.style.fontSize = '20px'
+// ul.previousElementSibling.style.color="silver"
+// ul.nextElementSibling.style.color = 'blue'
 
 
+let btn=document.querySelector("button")
 
+btn.addEventListener("click", e => {
+	e.target.textContent="clicked!"
+	e.target.classList.add("btn-danger")
+	alert("you click")
+
+})
 
 
 
